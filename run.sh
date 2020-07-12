@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec app/app "$@"
+app/app "$@" || echo "run error code: $?"
